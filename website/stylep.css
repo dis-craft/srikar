@@ -5,16 +5,15 @@ body {
     height: 77 px;
   }
   
-  header {
-    background-color: #3498db; /* Blue header */
-    color: #fff; /* White text */
-    width: 90000 px;
-    height: 47 px;
-    padding: 20 px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
+header {
+  background-color: #3498db; /* Blue header */
+  color: #fff; /* White text */
+  padding: 20 px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
   h1,h2
   {
