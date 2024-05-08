@@ -18,11 +18,11 @@ h1, h2 {
 }
 
 .sidebar {
-  position: fixed;
+  position:static;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 200px;
+  width: 150px;
   background-color: #e74c3c; /* Red sidebar */
   color: #fff; /* White text */
   padding: 20px;
@@ -46,35 +46,4 @@ a {
 main {
   padding: 20px;
   margin-left: 200px; /* Make space for the sidebar */
-}
-
-/* Add styles for individual sections using class names */
-.about-section {
-  background-color: #f1f1f1;
-  padding: 40px;
-}
-
-.about-section img {
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-.services-section {
-  background-color: #eaeaea;
-  padding: 40px;
-}
-
-.service-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.service-list li {
-  margin-bottom: 10px;
-}
-
-.contact-section {
-  background-color: #e0e0e0;
-  padding: 40px;
 }
