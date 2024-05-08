@@ -2,15 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 77px;
+    height: 77 px;
   }
   
   header {
     background-color: #3498db; /* Blue header */
     color: #fff; /* White text */
-    width: 90000px;
-    height: 47px;
-    padding: 20px;
+    width: 90000 px;
+    height: 47 px;
+    padding: 20 px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -28,7 +28,7 @@ body {
   }
   
   nav li {
-    margin-bottom: 10px;
+    margin-bottom: 10 px;
   }
   
   a {
