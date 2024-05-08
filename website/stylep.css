@@ -10,9 +10,9 @@ header {
   color: #fff; /* White text */
   padding: 20 px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  justify-content: left;
+  align-items: left;
+  overflow: auto;
 
   
   h1,h2
@@ -20,6 +20,7 @@ header {
     text-align: left;
   }
   
+
   nav ul {
     list-style: none;
     padding: 0;
