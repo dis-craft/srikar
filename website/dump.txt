@@ -1,0 +1,39 @@
+<main>
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>Add content about your website or company.</p>
+      <img src="images/about-image.jpg" alt="About Us Image"> </section>
+    <section id="services" class="services-section">
+      <h2>Services</h2>
+      <p>Describe the services you offer.</p>
+      <ul class="service-list">
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+      </ul>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Provide contact information or a form.</p>
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+
+
+  main section 
+  
+
+    <nav class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#Projects">Projects (Current)</a></li>
+      <li><a href="researches.html">Researches</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
