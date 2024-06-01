@@ -127,3 +127,43 @@ main {
 
 
 style.css |
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 77 px;
+  }
+  
+header {
+  background-color: #3498db; /* Blue header */
+  color: #fff; /* White text */
+  padding: 20 px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  overflow: auto;
+
+  
+  h1,h2
+  {
+    text-align: left;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin-bottom: 10 px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent (sidebar) */
+  }
+  

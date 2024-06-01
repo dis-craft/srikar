@@ -45,3 +45,9 @@ a[href="https://srikar.pages.dev/"] {
   position: absolute; /* Make it positioned absolute */
   top: 10px; left: 10px; /* Set top and left position */
 }
+
+.home {
+  margin-top: 40px;
+  color: #eee;
+
+}
