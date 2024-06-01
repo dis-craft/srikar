@@ -23,7 +23,7 @@ h1, h2 {
   position:static;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 900px;
   width: 150px;
   background-color: #e74c3c; /* Red sidebar */
   color: #fff; /* White text */

@@ -8,10 +8,9 @@ body {
 header {
   background-color: #3498db;  /* Blue header */
   color: #fff;                /* White text */
-  padding: 20px;
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
 }
 
@@ -51,3 +50,7 @@ a[href="https://srikar.pages.dev/"] {
   color: #eee;
 
 }
+
+
+
+
