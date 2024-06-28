@@ -6,13 +6,14 @@ body {
   padding: 0;
 }
 
+
 header {
   background-color: #3498db; /* Blue header */
   color: #fff; /* White text */
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 h1, h2 {
@@ -70,4 +71,17 @@ main {
 .button{
   text-align: left;
   margin-top:auto;
+}
+
+
+/* Style for the Home Link */
+a[href="https://srikar.pages.dev/"] {
+  position: absolute; /* Make it positioned absolute */
+  top: 10px; left: 10px; /* Set top and left position */
+}
+
+.home {
+  margin-top: 23px;
+  color: #eee;
+
 }
