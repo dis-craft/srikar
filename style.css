@@ -72,3 +72,10 @@ html, body {
     width: 100%;
 }
 
+.contactme {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
