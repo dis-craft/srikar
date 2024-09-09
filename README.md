@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on Web Development!<br>👯 I’m looking to collaborate on building a e-Commerce website.<br>🌱 I’m currently learning HTML, CSS.
+🔭 I’m currently working on Web Development!<br>👯 I’m looking to collaborate on building an e-Commerce website.<br>🌱 I’m currently learning HTML, CSS.
 
 
 ## 🌐 Socials:
