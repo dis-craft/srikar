@@ -81,13 +81,14 @@ html, body {
 }
 
 .projs {
-    background-color: aqua; 
+    background-color: rgb(160, 140, 189);
     margin: 10px; 
-    padding: 10px;
-  font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    padding: 14px;
+    border-radius: 10px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
@@ -99,6 +100,7 @@ html, body {
 .projinfo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
+    line-height: 10px;
 }   
