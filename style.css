@@ -79,3 +79,26 @@ html, body {
     font-family: sans-serif;
     font-size: 2rem;
 }
+
+.projs {
+    background-color: aqua; 
+    margin: 10px; 
+    padding: 10px;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.project-ulti-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}   
