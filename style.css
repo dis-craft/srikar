@@ -89,6 +89,11 @@ html, body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    transition: box-shadow 0.3s;
+}
+.projs:hover{
+    box-shadow: 0 0 15px rgba(64, 49, 79, 0.9);
+
 }
 
 
@@ -101,6 +106,15 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 6px;
+    border: solid;
     line-height: 10px;
+    border-color: rgb(144, 104, 173);
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    margin-bottom: 10px;
 }   
+
+.projinfo:hover{
+    box-shadow: 0 0 15px rgba(64, 49, 79, 0.9);
+}
