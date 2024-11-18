@@ -1,26 +1,213 @@
-html, body {
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.ulti-body{
-    display: grid;
-    grid-template-rows: 70px;
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
 }
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f5f5f5;
+    text-align: center;
+    position: relative;
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 4em 2em;
+    height: 100vh;
+    background: #e2e2e2;
+}
+
+.experience-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2em;
+    padding-left: 20px;
+    width: 50%;
+    animation: slideUp 1s ease;
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #444;
+}
+
+.timeline-item p {
+    margin: 0.5em 0;
+}
+
+.timeline-item span {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Projects Section */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    position: relative;
+    transition: transform 0.3s ease;
+    perspective: 180px;
+    margin: 10px;
+    padding: 14px;
+    transition: box-shadow 0.3s;
+    font-family: "Fira Code", monospace;
+    font-weight: 300;
+}
+
+
+
+/* Card */
+.card {
+    background-color: #7e7f80;
+    color: #ffffff;
+    width: 18em;
+    height: 28em;
+    border-radius: 12px;
+    border: 2px solid #1b1c1c;
+    overflow: hidden;
+    transition: 400ms background ease-in-out, 400ms transform ease-out;
+}
+
+.card:hover {
+    background-color: rgba(162, 163, 163, 0.94);
+}
+
+/* Card Content */
+.card-content {
+    padding: 6px;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Links Container */
+.card-links {
+    display: flex;
+    gap: 15px;
+}
+
+.card-links a {
+    color: #1b1c1c;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.card-links a:hover {
+    background: #f0f0f0;
+}
+
+/* Contact and About Sections */
+.contact-section, .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-section label, .contact-section input, .contact-section button {
+    margin: 10px 0;
+}
+
+.contact-section button {
+    width: 100px;
+}
+
+.about-section {
+    background-color: rgb(95, 90, 90);
+}
+
+.about-section p {
+    text-align: center;
+}
+
+/* Navigation Buttons */
 .headbar{
-    background-color: #442f4f;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.logo{
-    width: 50px;
-    border-radius: 100px;
-    margin-left: 20px;
-    margin-top: 5px;
-    padding: 5px;
-    transition: box-shadow 0.3s;
+
+.headbarelements {
+    font-family: sans-serif;
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+    padding: 16px;
+    border-radius:6px;
+    transition: box-shadow 0.23s;
 }
-.logo:hover{
-    box-shadow: 1px 1px 25px rgba(175, 117, 216, 0.386);
+.headbarelements:hover{
+    box-shadow: 1px 1px 10px rgba(56, 56, 56, 0.4);
 }
 .leftsections{
     align-items: center;
@@ -29,40 +216,15 @@ html, body {
     padding-left: 100px;
     justify-content: space-evenly;
 }
-.headbarelements {
-    font-family: sans-serif;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    border-radius:6px;
-    transition: box-shadow 0.23s;
-}
-.headbarelements:hover{
-    box-shadow: 1px 1px 10px rgba(25, 10, 37, 0.4);
-}
-.mainimage{
-    width: 300px;
+.nav-buttons a:hover {
+    background: #ddd;
 }
 
-
-.mainbody1{
-    background-color: rgb(25, 10, 37);
-    height: 650px;
-    display: flex;
-    justify-content: space-around; 
-    gap: 100px;
-    align-items: center;   
-}
-.intro{
-    color: white;
-    font-family: sans-serif;
-    font-size: 2rem;
-    display: inline-block;
-}
-.mainbody2{
-    background-color: #442f4f;
-    height: 150px;display: flex;
+/* Footer */
+.mainbody2 {
+    background-color: #262627;
     color: rgb(209, 195, 195);
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -71,50 +233,13 @@ html, body {
     bottom: 0;
     width: 100%;
 }
-
-.contactme {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    font-family: sans-serif;
-    font-size: 2rem;
-}
-
-.projs {
-    background-color: rgb(160, 140, 189);
-    margin: 10px; 
-    padding: 14px;
-    border-radius: 10px;
-    font-family: "Fira Code", monospace;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+.logo{
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 20px;
     transition: box-shadow 0.3s;
+    margin-left: 100px;
 }
-.projs:hover{
-    box-shadow: 0 0 15px rgba(64, 49, 79, 0.9);
-
-}
-
-
-.project-ulti-div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.projinfo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px;
-    border: solid;
-    line-height: 10px;
-    border-color: rgb(144, 104, 173);
-    border-radius: 10px;
-    transition: box-shadow 0.3s;
-    margin-bottom: 10px;
-}   
-
-.projinfo:hover{
-    box-shadow: 0 0 15px rgba(64, 49, 79, 0.9);
+.logo:hover{
+    box-shadow: 1px 1px 25px rgba(175, 117, 216, 0.386);
 }
