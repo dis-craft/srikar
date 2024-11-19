@@ -206,7 +206,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #c9c9c9;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -219,7 +219,7 @@ body {
 
 /* Button Hover Effect */
 #scrollTopBtn:hover {
-    background-color: #555;
+    background-color: #828282;
 }
 .headbarelements {
     font-family: sans-serif;
@@ -289,4 +289,8 @@ body {
 * {
     scrollbar-width: thin; /* Makes scrollbar thinner */
     scrollbar-color: #888 #f1f1f1; /* thumb color followed by track color */
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
