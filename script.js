@@ -77,3 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show the scroll-to-top button when scrolling down
+window.onscroll = function() {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
