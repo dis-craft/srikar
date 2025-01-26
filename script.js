@@ -102,6 +102,102 @@ window.onscroll = function() {
 };
 
 
+<script>
+        // Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBSbonwVE3PPXIIrSrvrB75u2AQ_B_Tni4",
+            authDomain: "discraft-c1c41.firebaseapp.com",
+            databaseURL: "https://discraft-c1c41-default-rtdb.firebaseio.com",
+            projectId: "discraft-c1c41",
+            storageBucket: "discraft-c1c41.appspot.com",
+            messagingSenderId: "525620150766",
+            appId: "1:525620150766:web:a426e68d206c68764aceff",
+            measurementId: "G-2TRNRYRX5E"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        // Function to get IP and location data
+        async function getNetworkInfo() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                return {
+                    ip: data.ip,
+                    city: data.city,
+                    region: data.region,
+                    country: data.country_name,
+                    org: data.org,
+                    timezone: data.timezone,
+                    coordinates: `${data.latitude},${data.longitude}`
+                };
+            } catch (error) {
+                return {
+                    ip: 'unknown',
+                    error: error.message
+                };
+            }
+        }
+
+        // Function to collect all user data
+        async function collectUserData() {
+            const networkInfo = await getNetworkInfo();
+
+            const userData = {
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent,
+                platform: navigator.platform,
+                language: navigator.language,
+                screenResolution: `${window.screen.width}x${window.screen.height}`,
+                deviceMemory: navigator.deviceMemory || 'unknown',
+                hardwareConcurrency: navigator.hardwareConcurrency || 'unknown',
+                cookiesEnabled: navigator.cookieEnabled,
+                doNotTrack: navigator.doNotTrack || 'unknown',
+                browser: {
+                    name: navigator.appName,
+                    version: navigator.appVersion,
+                    vendor: navigator.vendor,
+                    online: navigator.onLine
+                },
+                network: networkInfo,
+                plugins: Array.from(navigator.plugins).map(plugin => ({
+                    name: plugin.name,
+                    filename: plugin.filename,
+                    description: plugin.description
+                })),
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                localStorageEnabled: !!window.localStorage,
+                sessionStorageEnabled: !!window.sessionStorage,
+                touchSupport: 'ontouchstart' in window,
+                cpuClass: navigator.cpuClass || 'unknown',
+                connection: navigator.connection ? {
+                    effectiveType: navigator.connection.effectiveType,
+                    downlink: navigator.connection.downlink,
+                    rtt: navigator.connection.rtt
+                } : 'unknown'
+            };
+
+            return userData;
+        }
+
+        // Log user data to Firebase
+        async function logUserData() {
+            try {
+                const userData = await collectUserData();
+                const logRef = database.ref('visits').push();
+                await logRef.set(userData);
+                console.log('User data logged successfully:', logRef.key);
+            } catch (error) {
+                console.error('Failed to log user data:', error);
+            }
+        }
+
+        // Run when the page loads
+        window.addEventListener('load', logUserData);
+    </script>
+
 // /*          *     .        *  .    *    *   . 
 //  .  *  move your mouse to over the stars   .
 //  *  .  .   change these values:   .  *
