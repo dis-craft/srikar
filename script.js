@@ -102,7 +102,7 @@ window.onscroll = function() {
 };
 
 
-<script>
+
         // Firebase Configuration
         const firebaseConfig = {
             apiKey: "AIzaSyBSbonwVE3PPXIIrSrvrB75u2AQ_B_Tni4",
@@ -196,7 +196,7 @@ window.onscroll = function() {
 
         // Run when the page loads
         window.addEventListener('load', logUserData);
-    </script>
+
 
 // /*          *     .        *  .    *    *   . 
 //  .  *  move your mouse to over the stars   .
