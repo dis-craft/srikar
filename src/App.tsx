@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
+import { Global } from '@emotion/react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Timeline from './pages/Timeline';
-import { GlobalStyle } from './styles/GlobalStyle';
+import { globalStyles } from './styles/GlobalStyle';
 
 const theme = createTheme({
   palette: {
@@ -37,7 +38,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
+      <Global styles={globalStyles} />
       <Router>
         <Navbar />
         <Routes>
