@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import styled from 'styled-components';
-import Tilt from 'react-tilt';
+import styled from '@emotion/styled';
+import { Tilt } from 'react-tilt';
 
 interface ProjectCardProps {
   title: string;

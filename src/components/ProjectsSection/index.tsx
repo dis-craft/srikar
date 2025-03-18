@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import ProjectCard from '../ProjectCard';
 
 const ProjectsGrid = styled.div`

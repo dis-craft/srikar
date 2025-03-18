@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
