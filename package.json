@@ -12,6 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.8",
+    "@mui/material": "^6.4.8",
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
     "framer-motion": "^12.5.0",
